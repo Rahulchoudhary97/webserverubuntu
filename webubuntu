@@ -1,0 +1,10 @@
+#!/bin/bash
+apt-get update all
+apt install httpd  -y
+systemctl enable --now httpd
+touch /usr/local/apache2/htdocs/index.html
+echo "my name is rahul" > /usr/local/apache2/htdocs/index.html/
+systemctl restart httpd
+~
+~
+
